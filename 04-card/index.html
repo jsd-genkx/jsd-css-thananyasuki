@@ -2,20 +2,68 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+
 		<link
 			rel="stylesheet"
 			href="reset.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="style.css"
-		/>
+		<link rel="stylesheet" href="style.css">
+
 		<title>CSS</title>
 	</head>
 
-	<body></body>
+	<body>
+		<div class="page">
+
+  <!-- Sidebar -->
+<div class="fixed left10 top-1/2 -translate-y-1/2 w-16 flex flex-col items-center py-5 z-50 rounded-r-lg">
+  <div id="iconBox" class="icon flex flex-col items-center">
+    <img src="images/icon_s.jpg" class="w-5 my-5 cursor-pointer">
+    <img src="images/icon_home.jpg" class="w-5 my-5 cursor-pointer">
+    <img src="images/icon_m.jpg" class="w-5 my-5 cursor-pointer">
+    <img src="images/icon_plus.jpg" class="w-5 my-5 cursor-pointer">
+  </div>
+</div>
+
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Hero Banner -->
+    <section class="hero">
+       <div class="relative w-full">
+  <img src="images/aespa_drama.gif" alt="teaser" class="w-full h-[50vh] object-cover block" />
+
+  <!-- Logo -->
+  <div id="logo" class="absolute top-20 left-0 w-52 z-20">
+  <img src="images/Aespa_Drama_logo.png" alt="logo" class="w-full red-glow" />
+</div>
+
+  <!-- Buttons -->
+  <div class="absolute top-60 left-4 z-20 flex gap-4">
+    <button class="bg-red-600 text-white px-10 py-1.5 rounded-md text-sm">Play</button>
+    <button class="bg-gray-200 text-black px-8 py-2 rounded-md text-sm whitespace-nowrap">Watch Trailer</button>
+  </div>
+</div>
+</section>
+
+<section class="relative mt-2 px-12">
+  <div class="flex gap-8">
+    <div class="bg-white rounded-xl shadow-sm w-60 h-80"></div>
+    <div class="bg-white rounded-xl shadow-sm w-60 h-80"></div>
+    <div class="bg-white rounded-xl shadow-sm w-60 h-80"></div>
+    <div class="bg-white rounded-xl shadow-sm w-60 h-80"></div>
+  </div>
+</section>
+
+  </main>
+
+
+<script src="script.js"></script>
+	</body>
 </html>
